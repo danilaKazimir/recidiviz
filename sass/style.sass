@@ -7,7 +7,7 @@
     &_nav
         display: flex
         justify-content: space-between
-        align-items: flex-start
+        align-items: center
         position: relative
         z-index: 1
         &_items
@@ -158,6 +158,7 @@
             transition: 0.3s all
             &:hover
                 background-color: #c3dcda
+                border: 1px solid #c3dcda
     &_images
         flex: 1
         &_1
@@ -314,6 +315,7 @@
             transition: 0.3s all
             &:hover
                 background-color: #c3dcda
+                border: 1px solid #c3dcda
     &_block
         display: flex
         justify-content: space-between
@@ -340,3 +342,104 @@
             color: #00413E
             font-family: Public Sans
             font-size: 17px
+
+.location
+    background-color: #001F1F
+    &_block
+        display: flex
+        align-items: flex-start
+        padding: 145px 0 130px 0
+        &_text
+            flex: 1
+            &_title
+                color: #FAFAFA
+                font-family: Libre Baskerville
+                font-size: 36px
+            &_subtitle
+                margin-top: 40px
+                color: #FAFAFA
+                font-family: Public Sans
+                font-size: 18px
+                line-height: 28px
+                width: 326px
+            &_btn
+                margin-top: 35px
+                width: 143px
+                height: 52px
+                border: transparent
+                border-radius: 80px
+                background: #00665F
+                color: #FFF
+                text-align: center
+                font-family: Public Sans
+                font-size: 14px
+                transition: 0.2s all
+                &:hover
+                    background-color: #024a45
+        &_img
+            flex: 1
+            width: 461px
+            height: 342px
+            border-radius: 3px
+            margin-top: 10px
+
+.footer
+    &_nav
+        background-color: #001414
+        padding: 110px 0 135px 0
+        &_items
+            display: flex
+        &_item
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                width: 15%
+            &:nth-child(4)
+                margin-left: auto
+                padding-right: 100px
+            &_title
+                color: #7D9798
+                font-family: Public Sans
+                font-size: 11px
+                text-transform: uppercase
+            &_divider
+                width: 16px
+                height: 1px
+                background-color: #25B895
+                margin-top: 25px
+            &_list
+                margin: 25px 0 0 0
+                padding: 0
+                list-style: none
+                a
+                    color: #EDECEB
+                    font-family: Public Sans
+                    font-size: 15px
+                    text-decoration: none
+                    transition: 0.3s all
+                    &:hover
+                        color: #b5eade
+                        text-decoration: underline
+    &_copyright
+        background-color: #000F0F
+        padding: 40px 0 60px
+        &_block
+            display: flex
+            align-items: flex-start
+            justify-content: space-between
+            &_text
+                color: #E5ECEC
+                font-family: Public Sans
+                font-size: 10px
+                &_links
+                    display: flex
+                    gap: 8px
+                    a
+                        color: #E5ECEC
+                        text-decoration: none
+                        transition: 0.3s all
+                        &:hover
+                            color: #b5eade
+                            text-decoration: underline
+                &_info
+                    &::before
+                        content: 'Copyright © 2017'
+                        font-size: 9px
